@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Movies</title>
+
+    </head>
+    <body>
+        <% for(var i=0; i<movies.length; i++) {
+            %>
+       <img src="<%=movies[i].Image%>" width="191" height="263"/><br><br>
+        Nume: <%=movies[i].Nume%><br>
+        Durata: <%=movies[i].Durata%><br>
+        Pret: <%=movies[i].Pret%><br>
+        Gen: <%=movies[i].Gen%><br>
+        Actori: <%=movies[i].Actori%><br>
+        <br>
+        <a href="BuyForm?nume=<%=movies[i].Nume%>"> Cumpara Bilet</a>
+        
+        <br><br><br>
+        <% } %>
+    </body>
+</html>
