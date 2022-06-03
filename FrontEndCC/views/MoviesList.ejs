@@ -1,21 +1,28 @@
 <html>
     <head>
+        <link rel="stylesheet" href="mystyle.css">
         <title>Movies</title>
 
     </head>
     <body>
-        <% for(var i=0; i<movies.length; i++) {
-            %>
-       <img src="<%=movies[i].Image%>" width="191" height="263"/><br><br>
-        Nume: <%=movies[i].Nume%><br>
-        Durata: <%=movies[i].Durata%><br>
-        Pret: <%=movies[i].Pret%><br>
-        Gen: <%=movies[i].Gen%><br>
-        Actori: <%=movies[i].Actori%><br>
-        <br>
-        <a href="BuyForm?nume=<%=movies[i].Nume%>"> Cumpara Bilet</a>
+        <h1 class="center">Bun venit! Acestea sunt filmele de astazi!</h1>
+        <div class="center">
+            <% for(var i=0; i<movies.length; i++) {
+                %>
+           <img src="<%=movies[i].Image%>" width="191" height="263" /><br><br>
+           <div class="center">
+           <p>Nume: <%=movies[i].Nume%><br></p>
+            <p>Durata: <%=movies[i].Durata%><br></p>
+            <p>Pret: <%=movies[i].Pret%><br></p>
+            <p>Gen: <%=movies[i].Gen%><br></p>
+            <p>Actori: <%=movies[i].Actori%><br></p>
+            
+            <br>
+            <a href="BuyForm?nume=<%=movies[i].Nume%>"> Cumpara Bilet</a>
+        </div>
+            <br><br><br>
+            <% } %>
+        </div>
         
-        <br><br><br>
-        <% } %>
     </body>
 </html>

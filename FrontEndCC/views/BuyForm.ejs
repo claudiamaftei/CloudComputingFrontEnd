@@ -1,16 +1,20 @@
   <html>
     <head>
         <title>Movies</title>
-
+        <link rel="stylesheet" href="mystyle.css">
     </head>
     <body>
+      <h1 class="center">Completare formular rezervare loc</h1>
         <form method = "POST" action="/SendNotification">
-            <label for="Nume">Nume utilizator:</label><br>
-            <input type="text" id="name" name="name" value=""><br>
-            <label for="email">E-mail utilizator:</label><br>
-            <input type="text" id="email" name="email" value=""><br>
+          <div class="center">
+            <label class="label" for="Nume">Nume utilizator:</label><br><br>
+            <input type="text" id="name" name="name" value=""><br><br><br>
+            <label for="email">E-mail utilizator:</label><br><br>
+            <input type="text" id="email" name="email" value=""><br><br>
             <input type="hidden" id="movieName" name="movieName" value="<%=movieName%>"><br><br>
-            <input type="submit" value="Trimite Notificare">
-          </form> 
+            <input type="submit" class="button" value="Trimite Notificare">
+          </div>
+        </form> 
+ 
     </body>
 </html>
